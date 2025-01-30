@@ -18,7 +18,7 @@ import (
 	"log/slog"
 	"sync"
 
-	"github.com/prometheus-community/postgres_exporter/config"
+	"github.com/bigbinary/neeto-deploy-postgres-exporter/config"
 	"github.com/prometheus/client_golang/prometheus"
 )
 

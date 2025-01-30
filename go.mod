@@ -1,4 +1,4 @@
-module github.com/prometheus-community/postgres_exporter
+module github.com/bigbinary/neeto-deploy-postgres-exporter
 
 go 1.23.0
 

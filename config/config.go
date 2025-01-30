@@ -112,6 +112,11 @@ func (m AuthModule) ConfigureTarget(target string) (DSN, error) {
 		}
 	}
 
+	// ✅ Explicitly set dbname if available
+	if dbname, exists := m.Options["dbname"]; exists {
+		dsn.path = "/" + dbname  // ✅ Fix: Ensure dbname is passed correctly
+	}
+
 	for k, v := range m.Options {
 		dsn.query.Set(k, v)
 	}

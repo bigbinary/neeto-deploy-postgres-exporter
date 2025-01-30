@@ -2,7 +2,7 @@ go:
     # This must match .circle/config.yml.
     version: 1.23
 repository:
-    path: github.com/prometheus-community/postgres_exporter
+    path: github.com/bigbinary/neeto-deploy-postgres-exporter
 build:
     binaries:
         - name: postgres_exporter
